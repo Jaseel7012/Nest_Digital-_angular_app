@@ -11,6 +11,7 @@ import { AdminComponent } from './admin/admin.component';
 import { UserregComponent } from './userreg/userreg.component';
 import { CourseaddComponent } from './courseadd/courseadd.component';
 import { AddFriendComponent } from './add-friend/add-friend.component';
+import { ViewFriendComponent } from './view-friend/view-friend.component';
 
 const myroute:Routes=[
   {
@@ -36,7 +37,15 @@ const myroute:Routes=[
   {
     path:'add course',
     component:CourseaddComponent
+  },
+  {
+    path:'add frnd',
+    component:AddFriendComponent
+  },{
+    path:'view friend',
+    component:ViewFriendComponent
   }
+  
 
 ]
 
