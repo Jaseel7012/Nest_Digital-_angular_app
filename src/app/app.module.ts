@@ -9,6 +9,7 @@ import { AboutComponent } from './about/about.component';
 import { GalleryComponent } from './gallery/gallery.component';
 import { AdminComponent } from './admin/admin.component';
 import { UserregComponent } from './userreg/userreg.component';
+import { CourseaddComponent } from './courseadd/courseadd.component';
 
 const myroute:Routes=[
   {
@@ -30,7 +31,12 @@ const myroute:Routes=[
   {
     path:'reg',
     component:UserregComponent
+  },
+  {
+    path:'add course',
+    component:CourseaddComponent
   }
+
 ]
 
 @NgModule({
@@ -40,7 +46,8 @@ const myroute:Routes=[
     AboutComponent,
     GalleryComponent,
     AdminComponent,
-    UserregComponent
+    UserregComponent,
+    CourseaddComponent
   ],
   imports: [
     BrowserModule,
