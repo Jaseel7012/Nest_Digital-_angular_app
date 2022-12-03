@@ -17,6 +17,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { AdminNavbarComponent } from './admin-navbar/admin-navbar.component';
 import { NavadminComponent } from './navadmin/navadmin.component';
 import { ViewFrndComponent } from './view-frnd/view-frnd.component';
+import { NavbarUserComponent } from './navbar-user/navbar-user.component';
 
 const myroute:Routes=[
   {
@@ -72,7 +73,8 @@ const myroute:Routes=[
     NavbarComponent,
     AdminNavbarComponent,
     NavadminComponent,
-    ViewFrndComponent
+    ViewFrndComponent,
+    NavbarUserComponent
   ],
   imports: [
     BrowserModule,
