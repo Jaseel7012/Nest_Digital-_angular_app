@@ -10,6 +10,7 @@ import { GalleryComponent } from './gallery/gallery.component';
 import { AdminComponent } from './admin/admin.component';
 import { UserregComponent } from './userreg/userreg.component';
 import { CourseaddComponent } from './courseadd/courseadd.component';
+import { AddFriendComponent } from './add-friend/add-friend.component';
 
 const myroute:Routes=[
   {
@@ -47,7 +48,8 @@ const myroute:Routes=[
     GalleryComponent,
     AdminComponent,
     UserregComponent,
-    CourseaddComponent
+    CourseaddComponent,
+    AddFriendComponent
   ],
   imports: [
     BrowserModule,
