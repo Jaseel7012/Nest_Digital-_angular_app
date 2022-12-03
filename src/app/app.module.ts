@@ -12,6 +12,7 @@ import { UserregComponent } from './userreg/userreg.component';
 import { CourseaddComponent } from './courseadd/courseadd.component';
 import { AddFriendComponent } from './add-friend/add-friend.component';
 import { ViewFriendComponent } from './view-friend/view-friend.component';
+import { ViewCourseComponent } from './view-course/view-course.component';
 
 const myroute:Routes=[
   {
@@ -44,8 +45,12 @@ const myroute:Routes=[
   },{
     path:'view friend',
     component:ViewFriendComponent
+  },
+  {
+    path:'viewc',
+    component:ViewCourseComponent
+
   }
-  
 
 ]
 
@@ -58,7 +63,8 @@ const myroute:Routes=[
     AdminComponent,
     UserregComponent,
     CourseaddComponent,
-    AddFriendComponent
+    AddFriendComponent,
+    ViewCourseComponent
   ],
   imports: [
     BrowserModule,
