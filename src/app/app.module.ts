@@ -15,6 +15,8 @@ import { ViewFriendComponent } from './view-friend/view-friend.component';
 import { ViewCourseComponent } from './view-course/view-course.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { AdminNavbarComponent } from './admin-navbar/admin-navbar.component';
+import { NavadminComponent } from './navadmin/navadmin.component';
+import { ViewFrndComponent } from './view-frnd/view-frnd.component';
 
 const myroute:Routes=[
   {
@@ -45,8 +47,8 @@ const myroute:Routes=[
     path:'add frnd',
     component:AddFriendComponent
   },{
-    path:'view friend',
-    component:ViewFriendComponent
+    path:'viewf',
+    component:ViewFrndComponent
   },
   {
     path:'viewc',
@@ -68,7 +70,9 @@ const myroute:Routes=[
     AddFriendComponent,
     ViewCourseComponent,
     NavbarComponent,
-    AdminNavbarComponent
+    AdminNavbarComponent,
+    NavadminComponent,
+    ViewFrndComponent
   ],
   imports: [
     BrowserModule,
