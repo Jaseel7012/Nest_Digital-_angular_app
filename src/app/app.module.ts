@@ -8,6 +8,7 @@ import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { GalleryComponent } from './gallery/gallery.component';
 import { AdminComponent } from './admin/admin.component';
+import { UserregComponent } from './userreg/userreg.component';
 
 const myroute:Routes=[
   {
@@ -25,6 +26,10 @@ const myroute:Routes=[
   {
     path:'adm',
     component:AdminComponent
+  },
+  {
+    path:'reg',
+    component:UserregComponent
   }
 ]
 
@@ -34,7 +39,8 @@ const myroute:Routes=[
     HomeComponent,
     AboutComponent,
     GalleryComponent,
-    AdminComponent
+    AdminComponent,
+    UserregComponent
   ],
   imports: [
     BrowserModule,
