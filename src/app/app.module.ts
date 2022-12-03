@@ -14,6 +14,7 @@ import { AddFriendComponent } from './add-friend/add-friend.component';
 import { ViewFriendComponent } from './view-friend/view-friend.component';
 import { ViewCourseComponent } from './view-course/view-course.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { AdminNavbarComponent } from './admin-navbar/admin-navbar.component';
 
 const myroute:Routes=[
   {
@@ -66,7 +67,8 @@ const myroute:Routes=[
     CourseaddComponent,
     AddFriendComponent,
     ViewCourseComponent,
-    NavbarComponent
+    NavbarComponent,
+    AdminNavbarComponent
   ],
   imports: [
     BrowserModule,
