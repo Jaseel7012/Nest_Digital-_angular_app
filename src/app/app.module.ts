@@ -20,6 +20,7 @@ import { ViewFrndComponent } from './view-frnd/view-frnd.component';
 import { NavbarUserComponent } from './navbar-user/navbar-user.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
 import { EmpLoginComponent } from './emp-login/emp-login.component';
+import { FormsModule } from '@angular/forms';
 
 const myroute:Routes=[
   {
@@ -90,7 +91,8 @@ const myroute:Routes=[
   imports: [
     BrowserModule,
     AppRoutingModule,
-    RouterModule.forRoot(myroute)
+    RouterModule.forRoot(myroute),
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
