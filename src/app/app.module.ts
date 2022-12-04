@@ -19,6 +19,7 @@ import { NavadminComponent } from './navadmin/navadmin.component';
 import { ViewFrndComponent } from './view-frnd/view-frnd.component';
 import { NavbarUserComponent } from './navbar-user/navbar-user.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
+import { EmpLoginComponent } from './emp-login/emp-login.component';
 
 const myroute:Routes=[
   {
@@ -60,6 +61,9 @@ const myroute:Routes=[
   {
     path:'cntct',
     component:ContactUsComponent
+  },{
+    path:'emplog',
+    component:EmpLoginComponent
   }
 
 ]
@@ -80,7 +84,8 @@ const myroute:Routes=[
     NavadminComponent,
     ViewFrndComponent,
     NavbarUserComponent,
-    ContactUsComponent
+    ContactUsComponent,
+    EmpLoginComponent
   ],
   imports: [
     BrowserModule,
