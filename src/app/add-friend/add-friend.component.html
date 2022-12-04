@@ -13,23 +13,23 @@ style="background-image: url('https://4kwallpapers.com/images/wallpapers/windows
                         </div>
                         <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                             <label for="" class="form-label">Name</label>
-                            <input type="text" class="form-control">
+                            <input name="name" [(ngModel)]="name" type="text" class="form-control">
                         </div>
                         
                         <div class="col col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                             <label for="" class="form-label">Friend Name</label>
-                            <input type="date" class="form-control">
+                            <input name="fname" [(ngModel)]="fname" type="date" class="form-control">
                         </div>
                         <div class="col col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                             <label for="" class="form-label">Friend Nick Name</label>
-                            <input type="text" class="form-control">
+                            <input name="nick" [(ngModel)]="nick" type="text" class="form-control">
                         </div>
                         <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                             <label for="" class="form-label">Describe Your Friend</label>
                             <textarea name="" id="" cols="30" rows="6" class="form-control"></textarea>
                         </div>
                         <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 text-center">
-                            <button class="btn btn-success">ADD</button>
+                            <button class="btn btn-success" (click)="view()">ADD</button>
                         </div>
                     </div>
                 </div>

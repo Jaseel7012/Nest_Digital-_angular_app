@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-userreg',
@@ -6,6 +7,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./userreg.component.css']
 })
 export class UserregComponent {
+  constructor(private r:Router){}
 id=""
 fname=""
 lname=""
@@ -47,6 +49,11 @@ view=()=>{
     "cnfrm":this.cnfrm
   }
   console.log(data)
+  if(this.cnfrm==this.pswrd){
+    this.r.navigate(['/emplog'])
+  }else{
+    alert("confirm password does not match")
+  }
 }
 
 }
