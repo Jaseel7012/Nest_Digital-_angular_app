@@ -15,37 +15,37 @@
                 <h2 class="text-center">WRITE TO US</h2>
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6">
                     <label for="" class="form-label">Name</label>
-                    <input type="text" class="form-control">
+                    <input name="name" [(ngModel)]="name" type="text" class="form-control">
                 </div>
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6">
                     <label for="" class="form-label">Designation</label>
-                    <input type="text" class="form-control">
+                    <input name="desi" [(ngModel)]="desi" type="text" class="form-control">
                 </div>
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6">
                     <label for="" class="form-label">Company Name</label>
-                    <input type="text" class="form-control">
+                    <input name="comp" [(ngModel)]="comp" type="text" class="form-control">
                 </div>
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6">
                     <label for="" class="form-label">Phone Number</label>
-                    <input type="text" class="form-control">
+                    <input name="pn" [(ngModel)]="pn" type="text" class="form-control">
                 </div>
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6">
                     <label for="" class="form-label">Email</label>
-                    <input type="text" class="form-control">
+                    <input name="email" [(ngModel)]="email" type="text" class="form-control">
                 </div>
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6">
                     <label for="" class="form-label">Country</label>
-                    <input type="text" class="form-control">
+                    <input name="country" [(ngModel)]="country" type="text" class="form-control">
                 </div>
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                     <label for="" class="form-label">Write Query</label>
 
-                    <textarea name="" id="" cols="30" rows="10" class="form-control"></textarea>
+                    <textarea  [(ngModel)]="query" name="query" id="" cols="30" rows="10" class="form-control"></textarea>
                   
                 </div>
 
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 text-center">
-                    <button class="btn btn-info">Submit</button>
+                    <button (click)="view()" class="btn btn-info">Submit</button>
                 </div>
             </div>
         </div>

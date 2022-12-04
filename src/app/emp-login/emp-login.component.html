@@ -14,14 +14,14 @@ style=" background-image: url('https://img.freepik.com/premium-photo/black-stone
                                 
                                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                                     <label for=""   class="form-label text-dark">User name</label>
-                                    <input name="uname"  type="text" class="form-control">
+                                    <input name="uname" [(ngModel)]="uname"  type="text" class="form-control">
                                 </div>
                                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                                     <label for=""  class="form-label text-dark">password</label>
-                                    <input name="pswrd"   type="text" class="form-control">
+                                    <input name="pswrd" [(ngModel)]="pswrd"  type="text" class="form-control">
                                 </div>
                                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 text-center">
-                                    <button class="btn btn-success" >Login</button>
+                                    <button class="btn btn-success"  (click)="view()">Login</button>
                                     <p class="text-danger p-2">Not a Member?,<a routerLink="/reg"  >Signup</a></p>
                                 </div>
                                </div>
