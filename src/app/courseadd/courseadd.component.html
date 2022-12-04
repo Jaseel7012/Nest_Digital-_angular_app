@@ -13,27 +13,27 @@ style="background-image: url('https://www.collegebasics.com/wp-content/uploads/2
                         </div>
                         <div class="col col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6">
                             <label for="" class="form-label">Course Title</label>
-                            <input type="text" class="form-control">
+                            <input name="title" [(ngModel)]="title" type="text" class="form-control">
                         </div>
                         
                         <div class="col col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                             <label for="" class="form-label">Course Date</label>
-                            <input type="date" class="form-control">
+                            <input name="cdate" [(ngModel)]="cdate" type="date" class="form-control">
                         </div>
                         <div class="col col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                             <label for="" class="form-label">Duration</label>
-                            <input type="text" class="form-control">
+                            <input name="duration" [(ngModel)]="duration" type="text" class="form-control">
                         </div>
                         <div class="col col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                             <label for="" class="form-label">Venue</label>
-                            <input type="text" class="form-control">
+                            <input name="venue" [(ngModel)]="venue" type="text" class="form-control">
                         </div>
                         <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                             <label for="" class="form-label">Course Description</label>
-                            <TExtarea class="form-control" rows="6"></TExtarea>
+                            <TExtarea  class="form-control" rows="6"></TExtarea>
                         </div>
                         <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 text-center">
-                            <button class="btn btn-success">ADD</button>
+                            <button class="btn btn-success" (click)="viewdata()">ADD</button>
                         </div>
                     </div>
                 </div>

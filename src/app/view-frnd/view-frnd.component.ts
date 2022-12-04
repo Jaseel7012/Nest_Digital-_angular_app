@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./view-frnd.component.css']
 })
 export class ViewFrndComponent {
+  
 
 }
